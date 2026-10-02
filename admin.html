@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin Dashboard - ShopHub</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div class="admin-layout">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="logo">🛍️ ShopHub</div>
+    <ul>
+      <li class="active"><span>📊</span> Dashboard</li>
+      <li><span>📦</span> Products</li>
+      <li><span>🛒</span> Orders</li>
+      <li><span>👥</span> Customers</li>
+      <li><span>⚙️</span> Settings</li>
+    </ul>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="admin-main">
+    <div class="admin-header">
+      <h2>Dashboard</h2>
+      <button class="btn-primary">+ Add Product</button>
+    </div>
+
+    <!-- STATS -->
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="label">Total Sales</div>
+        <div class="value purple">$24,500</div>
+      </div>
+      <div class="stat-card">
+        <div class="label">Orders</div>
+        <div class="value green">1,245</div>
+      </div>
+      <div class="stat-card">
+        <div class="label">Customers</div>
+        <div class="value orange">862</div>
+      </div>
+      <div class="stat-card">
+        <div class="label">Pending</div>
+        <div class="value red">18</div>
+      </div>
+    </div>
+
+    <!-- PRODUCTS TABLE -->
+    <div class="table-card">
+      <h3 style="margin-bottom: 1rem;">Recent Products</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Price</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="admin-product-rows"></tbody>
+      </table>
+    </div>
+  </main>
+
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>

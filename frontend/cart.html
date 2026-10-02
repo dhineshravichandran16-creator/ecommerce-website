@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cart - ShopHub</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">🛍️ ShopHub</div>
+    <div class="search-bar">
+      <input type="text" placeholder="Search products..." />
+    </div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="admin.html">Admin</a></li>
+      <li>
+        <div class="cart-icon" onclick="location.href='cart.html'">
+          🛒 <span class="badge" id="cart-count">0</span>
+        </div>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="container" style="padding-top: 2rem;">
+    <h2 class="section-title">Your <span>Cart</span></h2>
+    <div id="cart-items"></div>
+    <div id="cart-summary"></div>
+  </div>
+
+  <script src="js/app.js"></script>
+  <script src="js/cart.js"></script>
+</body>
+</html>
